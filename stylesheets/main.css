@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    background-image: url('../assets/images/shades_of_pink.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 56%;
+}
+
+#shade {
+    background-color: rgba(0, 0, 0, .3);
+    height: 100%;
+}
+
+nav {
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    /* padding: 20px; */
+}
+
+nav.open {
+    background-color: rgba(0, 0, 0, .8)
+}
+
+ul {
+    position: relative;
+    list-style: none;
+    width: 0;
+    top: 10px;
+    max-height: 0;
+    overflow: hidden;
+}
+
+ul.open {
+    max-height: fit-content;
+    width: 100%;
+}
+
+#expand-button {
+    height: 21px;
+    width: 33px;
+    float: right;
+}
+
+#hamburger {
+    position: relative;
+    height: 25px;
+    width: 100%;
+}
+
+#hamburger span {
+    border-radius: 9px;
+    width: 100%;
+    height: 4px;
+    display: inline-block;
+    position: absolute;
+}
+
+#hamburger span:nth-child(1) {
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#hamburger span:nth-child(2), #hamburger span:nth-child(3) {
+    top: .5em;
+    transition: .5s ease-in-out;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+#hamburger span:nth-child(4) {
+    top: 1em;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+
+span:nth-child(1).open {
+    visibility: hidden;
+}
+
+span:nth-child(2).open {
+    transform: rotate(45deg);
+    background-color: pink !important;
+}
+
+span:nth-child(3).open {
+    transform: rotate(-45deg);
+    background-color: pink !important;
+}
+
+span:nth-child(4).open {
+    visibility: hidden;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+    font-family: 'Verdana', snas-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fa {
+    font-size: 24px !important;
+}
+
+.nav-right {
+    margin-left: auto;
+    margin-right: 36px;
+}
+
+#pinkhr {
+    border: 0;
+    width: 84%;
+    position: absolute;
+    bottom: 52%;
+    left: 4%;
+    border-top: 5px solid pink;
+}
+
+.banner {
+    width: 52%;
+    position: absolute;
+    bottom: 53%;
+    left: 5%;
+}
+
+.banner p {
+    font-family: 'Italianno', cursive;
+    word-spacing: 100vw;
+    text-align: center;
+    line-height: 59px;
+    font-size: 70px;
+    color: pink;
+}
+
+#about-background {
+    background-image: url('../assets/images/shades_of_pink.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 115%;
+    display: none;
+}
+
+#pink {
+    background-color: pink;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 260px;
+    width: 100%;
+}
+
+.cosmetics {
+    
+    height: 65%;
+    width: 25%;
+    border: 2px solid black;
+}
+
+#cosmetic {
+    width: 25%;
+    height: 65%;
+    border: 2px solid black;
+}
+
+#about {
+    height: 470px;
+    width: 100%;
+    /* background-image: linear-gradient(to right, #585C5F, #8A9094); */
+    background-image: url(../assets/images/makeup_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#about div {
+    height: auto;
+    width: 93%;
+    padding: 24px 23px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgba(0, 0, 0, .8);
+    /* box-shadow: 25px 25px rgba(0, 0, 0, .73); */
+    border: 2px solid black;
+    top: 25px;
+    font-size: 14px;
+    word-spacing: normal;
+    color: white;
+    font-family: 'Verdana', sans-serif;
+}
+
+#whiteborder {
+    border: 4px solid #ff58db !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    width: 95% !important; 
+    box-shadow: none !important;
+    position: relative !important;
+    top: 0 !important;
+}
+
+#sign {
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+
+/* About Me */
+
+#jessica {
+    height: 225px;
+    width: 225px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 31px;
+}
+
+#aboutMe {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#aboutMe h1 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#aboutMe div {
+    border: 3px solid black;
+    background-color: #F5A6B3;
+    padding: 11% 6%;
+}
+
+#aboutMe p {
+    font-family: 'Verdana', sans-serif;
+    margin: 6% auto;
+    font-size: 14px;
+    color: white;
+    word-spacing: normal;
+}
+
+/* Contact Page */
+
+#pink-background {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #F5A6B3;
+}
+
+#hide {
+    display: none;
+}
+
+#contact {
+    width: 100%;
+    height: 570px;
+    margin: auto;
+    position: relative;
+    top: -1%;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    background-color: #F5A6B3;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact h1 {
+    font-weight: 500;
+    color: darkgreen;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#contact hr {
+    border: 0;
+    width: 10%;
+    margin: 4% auto;
+    border-top: 2px solid darkgreen;
+}
+
+#contact p {
+    font-family: sans-serif;
+    color: darkgreen;
+    font-weight: 100;
+    font-size: 14px;
+    text-align: center;
+}
+
+#contact div {
+    background-color: #F5A6B3;
+}
+
+input, textarea {
+    border: none;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: .1px solid darkgreen;
+    background-color: #F5A6B3;
+    font-size: 15px;
+    height: 35px;
+    color: darkgreen;
+    width: 100%;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+#name {
+    display: inline-block;
+    margin-right: 5px;
+    width: 47%;
+}
+
+input::placeholder, textarea::placeholder {
+    color: darkgreen;
+    font-size: 14px;
+    font-family:  Times, serif
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #F5A6B3;
+    border: none;
+    border-bottom: 1px solid #F5A6B3;       
+    color: darkgreen;
+    padding: 8px 15px;
+    font-weight: 500;
+    font-size: 13px;
+    display: block;
+    margin: 4% auto;
+}
+
+button:hover {
+    cursor: pointer;
+    border-bottom: 1px solid darkgreen;
+}
+
+#laptop {
+    height: 40%;
+    width: 100%;
+    border: 2px solid black;
+}
+
+#email {
+    float: right;
+    width: 47%;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 450px) {
+    nav {
+        height: 4.5%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 1);
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    #expand-button {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 52%;
+        max-height: fit-content;
+    }
+
+    .nav-right {
+        margin-right: 3%;
+        width: 20%;
+    }
+
+    #jessica {
+        margin: 23px auto;
+    }
+
+    #aboutMe div {
+        height: fit-content;
+    }
+
+    #pink {
+        height: 32%;
+    }
+    .cosmetics {
+        height: 80%;
+        width: 20%;
+    }
+    #cosmetic {
+        height: 80%;
+        width: 20%;
+    }
+    #about div {
+        width: 71%;
+    }
+
+    #laptop {
+        height: 56%;
+    }
+    #contact {
+        height: 770px;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    #pinkhr {
+        width: 75%;
+        left: 15%
+    }
+    #about div {
+        top: 50px;
+        width: 58%;
+        font-size: 16px;
+    }
+    #about-background {
+        display: block;
+    }
+    #aboutMe {
+        width: 565px;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 0 25px 19px rgb(224, 86, 109);
+    }
+    /* #form {
+        width: 80%;
+    } */
+}
+
+@media only screen and (min-width: 800px) {
+    #pink-background {
+        background-image: url(../assets/images/shades_of_pink.jpg);
+        background-size: 100% 100%;
+        width: 100%;
+        height: 125%;
+    }
+    #laptop {
+        width: 600px;
+        height: 35%;
+        position: absolute;
+        z-index: 3;
+        top: 7%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #contact {
+        width: 600px;
+        height: 571px;
+        top: 41%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    header {
+        height: 80%;
+    }
+    .banner {
+        width: 44%;
+        bottom: 39%;
+    }
+    .banner p {
+        font-size: 124px;
+        line-height: 100px;
+    }
+    #pinkhr {
+        left: 9%;
+        bottom: 38%;
+    }
+    #pink {
+        height: 50%;
+    }
+    .cosmetics {
+        height: 80%;
+        width: 24%;
+    }
+    #cosmetic {
+        height: 80%;
+        width: 24%;
+    }
+    #about {
+        height: 600px;
+    }
+    #about div {
+        top: 70px;
+        width: 50%;
+        font-size: 18px;
+    }
+    #sign {
+        margin-bottom: 16px;
+    }
+    #aboutMe {
+        width: 551px;
+    }
+    #aboutMe div {
+        height: fit-content;
+    }
+    #jessica {
+        margin: 2px auto;
+        margin-bottom: 37px;
+    }
+    #aboutMe h1 {
+        font-size: 30px;
+    }
+    ul {
+        width: 34%;
+    }
+    .nav-right {
+        width: 16%;
+        margin-right: 3%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    nav {
+        height: 5%;
+    }
+    header {
+        height: 110%;
+    }
+    .banner {
+        width: 30%;
+        bottom: 25%;
+        left: 13%;
+    }
+    .banner p {
+        font-size: 170px;
+        line-height: 150px;
+    }
+    #pinkhr {
+        left: 13%;
+        bottom: 22%;
+        border-top: 9px solid pink;
+    }
+    #pink {
+        height: 77%;
+    }
+    .cosmetics {
+        height: 70%;
+        width: 27%;
+    }
+    #cosmetic {
+        height: 70%;
+        width: 27%;
+    }
+    #about {
+        height: 700px;
+    }
+    #about div {
+        top: 12%;
+        padding: 27px 32px;
+        width: 45%;
+    }
+    #aboutMe p {
+        font-size: 16px;
+    }
+    #laptop {
+        width: 580px;
+        height: 50%;
+        position: relative;
+        transform: none;
+        top: 0;
+        left: 0;
+        border-right: none;
+    }
+    #contact {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 600px;
+        height: 50%;
+    }
+    #pink-background {
+        display: flex;
+        justify-content: center;
+        padding-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #pink {
+        height: 94%;
+    }
+    #about {
+        height: 94%;
+    }
+    #about div {
+        padding: 75px 50px;
+    }
+    #aboutMe h1 {
+        font-size: 35px;
+    }
+}
