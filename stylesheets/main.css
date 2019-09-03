@@ -179,6 +179,7 @@ a {
 #cosmetic {
     width: 99%;
     height: 418px;
+    margin: 16px auto;
     border: 2px solid black;
 }
 
@@ -195,7 +196,6 @@ a {
     height: auto;
     width: 93%;
     padding: 24px 23px;
-    padding-bottom: 40px;
     margin: 0 auto;
     position: relative;
     background-color: rgba(0, 0, 0, .8);
@@ -221,6 +221,7 @@ a {
     position: relative;
     top: 20px;
     left: 40px;
+    margin-bottom: 16px;
 }
 
 /* About Me */
