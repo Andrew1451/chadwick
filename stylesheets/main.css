@@ -435,6 +435,7 @@ button:hover {
     #cosmetic {
         height: 80%;
         width: 20%;
+        margin: 0;
     }
     #about div {
         width: 71%;
