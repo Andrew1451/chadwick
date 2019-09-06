@@ -349,6 +349,11 @@ input:focus, textarea:focus {
     outline: none;
 }
 
+input::-webkit-autofill {
+    color: darkgreen;
+    background-color: #F5A6B3;
+}
+
 form {
     width: 80%;
     margin: 0 auto;
@@ -369,6 +374,10 @@ button {
 button:hover {
     cursor: pointer;
     border-bottom: 1px solid darkgreen;
+}
+
+button:focus {
+    outline: none;
 }
 
 #laptop {
