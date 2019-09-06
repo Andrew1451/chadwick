@@ -32,6 +32,10 @@ nav {
     /* padding: 20px; */
 }
 
+.nav-left a {
+    padding-bottom: 2px;
+}
+
 nav.open {
     background-color: rgba(0, 0, 0, .8)
 }
@@ -349,11 +353,6 @@ input:focus, textarea:focus {
     outline: none;
 }
 
-input::-webkit-autofill {
-    color: darkgreen;
-    background-color: #F5A6B3;
-}
-
 form {
     width: 80%;
     margin: 0 auto;
@@ -401,6 +400,10 @@ button:focus {
         padding: 0;
         display: flex;
         align-items: center;
+    }
+
+    .nav-left a:hover {
+        border-bottom: .5px solid pink;
     }
 
     #expand-button {
