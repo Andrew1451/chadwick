@@ -423,13 +423,21 @@ button:focus {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+              justify-content: space-between;
         max-height: -webkit-fit-content;
         max-height: -moz-fit-content;
         max-height: fit-content;
         width: 52%;
-}
+    }
+
+    ul:before, ul:after {
+        content: '';
+        display: block;
+        width: 2px;
+        background-color: black;
+    }
 
     .nav-right {
         margin-right: 3%;
@@ -456,12 +464,19 @@ button:focus {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+    }
+
+    #pink:before, #pink:after {
+        content: '';
+        display: block;
+        width: 2px;
+        background-color: pink;
     }
 
     .cosmetics {
@@ -600,6 +615,12 @@ button:focus {
 @media only screen and (min-width: 1200px) {
     nav {
         height: 5%;
+    }
+    .nav-left {
+        right: 39px;
+    }
+    .nav-right {
+        left: 20px;
     }
     header {
         height: 110%;
