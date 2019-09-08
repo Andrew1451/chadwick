@@ -29,7 +29,6 @@ nav {
     top: 0;
     right: 0;
     padding: 8px;
-    /* padding: 20px; */
 }
 
 .nav-left a {
@@ -45,7 +44,6 @@ ul {
     list-style: none;
     width: 0;
     top: 10px;
-    max-height: 0;
     overflow: hidden;
 }
 
