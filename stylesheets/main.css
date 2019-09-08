@@ -131,12 +131,13 @@ a {
 }
 
 #pinkhr {
-    border: 0;
+    border-top: 5px solid pink;
+    -webkit-box-shadow: 3px 3px black;
+            box-shadow: 3px 3px black;
     width: 84%;
     position: absolute;
     bottom: 57%;
     left: 4%;
-    border-top: 5px solid pink;
 }
 
 .banner {
@@ -148,6 +149,7 @@ a {
 
 .banner p {
     font-family: 'Italianno', cursive;
+    text-shadow: 3px 3px black;
     word-spacing: 100vw;
     text-align: center;
     line-height: 59px;
@@ -166,15 +168,12 @@ a {
 #pink {
     background-color: pink;
     display: block;
-    justify-content: space-evenly;
-    align-items: center;
     height: fit-content;
     width: 100%;
     padding: 16px;
 }
 
 .cosmetics {
-    
     height: 418px;
     width: 99%;
     border: 2px solid black;
@@ -289,9 +288,15 @@ a {
     border: 2px solid black;
     background-color: #F5A6B3;
     font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #contact h1 {
@@ -404,6 +409,7 @@ button:focus {
 
     .nav-left a:hover {
         border-bottom: .5px solid pink;
+        cursor: pointer;
     }
 
     #expand-button {
@@ -411,12 +417,19 @@ button:focus {
     }
 
     ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 52%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        max-height: -webkit-fit-content;
+        max-height: -moz-fit-content;
         max-height: fit-content;
-    }
+        width: 52%;
+}
 
     .nav-right {
         margin-right: 3%;
@@ -432,14 +445,25 @@ button:focus {
     }
 
     #aboutMe div {
-        height: fit-content;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content
     }
 
     #pink {
-        height: 32%;
-        display: flex;
+        height: 43%;
         padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
+
     .cosmetics {
         height: 80%;
         width: 20%;
@@ -479,12 +503,11 @@ button:focus {
         position: absolute;
         top: 10%;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
         box-shadow: 0 0 25px 19px rgb(224, 86, 109);
     }
-    /* #form {
-        width: 80%;
-    } */
 }
 
 @media only screen and (min-width: 800px) {
@@ -501,7 +524,9 @@ button:focus {
         z-index: 3;
         top: 7%;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
     #contact {
         width: 600px;
@@ -552,7 +577,9 @@ button:focus {
         width: 551px;
     }
     #aboutMe div {
-        height: fit-content;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content
     }
     #jessica {
         margin: 2px auto;
@@ -631,8 +658,12 @@ button:focus {
         height: 50%;
     }
     #pink-background {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         padding-top: 10%;
     }
 }
