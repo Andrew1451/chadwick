@@ -1,4 +1,5 @@
 const expandButton  = document.getElementById('expand-button');
+const banner = document.getElementsByClassName('banner');
 
 expandButton.onclick = function() {
     const mobileNav = document.querySelectorAll('.mobile-nav');
@@ -6,3 +7,6 @@ expandButton.onclick = function() {
         mobileNav[i].classList.toggle('open');
     }
 };
+// window.onload = function() {
+//     banner[0].style.display='block';
+// }

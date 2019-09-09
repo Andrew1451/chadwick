@@ -130,6 +130,7 @@ a {
 }
 
 #pinkhr {
+    border: 0;
     border-top: 5px solid pink;
     -webkit-box-shadow: 3px 3px black;
             box-shadow: 3px 3px black;
@@ -142,6 +143,7 @@ a {
 .banner {
     width: 52%;
     position: absolute;
+    display: none;
     bottom: 58%;
     left: 5%;
 }
@@ -155,6 +157,7 @@ a {
     font-size: 70px;
     color: pink;
 }
+
 
 #about-background {
     background-image: url('../assets/images/shades_of_pink.jpg');
@@ -188,7 +191,6 @@ a {
 #about {
     height: 500px;
     width: 100%;
-    /* background-image: linear-gradient(to right, #585C5F, #8A9094); */
     background-image: url(../assets/images/makeup_bg.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -201,7 +203,6 @@ a {
     margin: 0 auto;
     position: relative;
     background-color: rgba(0, 0, 0, .8);
-    /* box-shadow: 25px 25px rgba(0, 0, 0, .73); */
     border: 2px solid black;
     top: 47px;
     font-size: 14px;
@@ -217,6 +218,10 @@ a {
     box-shadow: none !important;
     position: relative !important;
     top: 0 !important;
+}
+
+#marykay {
+    color: #ff58db;
 }
 
 #sign {
@@ -515,6 +520,8 @@ button:focus {
     }
     #about-background {
         display: block;
+        min-height: fit-content;
+        height: 115%;
     }
     #aboutMe {
         width: 565px;
@@ -704,5 +711,14 @@ button:focus {
     }
     #aboutMe h1 {
         font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    header {
+        height: 118%;
+    }
+    #about {
+        height: 97%;
     }
 }

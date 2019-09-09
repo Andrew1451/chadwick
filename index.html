@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Personal website with a link to buy Mary Kay cosmetics right from Mary Kay's website! Come visit my website and say hi!">
     <link href="https://fonts.googleapis.com/css?family=Italianno&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href="stylesheets/font.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="stylesheets/main.css">
     <title>Jessica Chadwick - Mary Kay</title>
@@ -47,7 +48,7 @@
         <div>
             <div id='whiteborder'>
                 <p>Thanks for visiting my personal website! I hope to help you on your skincare/makeup journey as both have always been a 
-                    big passion for me. This page will also direct you to my Mary Kay site where you can browse from products and purchase
+                    big passion for me. This page will also direct you to my <a id='marykay' href='#'>Mary Kay</a> site where you can browse from products and purchase
                     as well. If you have any questions or even just a simple skincare related question, feel free to email me down below and
                     I will come back to you with an answer.
                 </p>
@@ -55,6 +56,11 @@
             </div>
         </div>
     </section>
+    <script> 
+        window.onload = function() {
+        document.getElementsByClassName('banner')[0].style.display = 'block';
+    }
+    </script>
     <script src='scripts/javascript.js'></script>
 </body>
 </html>
